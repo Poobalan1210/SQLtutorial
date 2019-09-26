@@ -1,4 +1,4 @@
-# SQL Tutorial (or) SQL Cheatsheet
+# SQL tutorial (or) SQL Cheatsheet
 * The only SQL tutorial/cheatsheet you'll ever need.
 * Syllabus designed based on tutorial from [w3schools.com](https://www.w3schools.com/sql/)
 
