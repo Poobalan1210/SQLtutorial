@@ -27,8 +27,6 @@
 Semicolon is required to seperate different SQL commands. SQL is case in-sensitive.
 ```
 SELECT * FROM Customers;
-```
-```
 SELECT column1, column2 FROM table_name;
 ```
 * #### SQL SELECT DISTINCT
@@ -36,32 +34,41 @@ SELECT column1, column2 FROM table_name;
 Displays only the unique results, without duplicates.
 ```
 SELECT DISTINCT * FROM CUSTOMERS;
-```
-```
 SELECT DISTINCT CustomerName, ContactName FROM CUSTOMERS;
-```
-```
 SELECT COUNT (DISTINCT CustomerName) FROM CUSTOMERS;
 ```
 * #### SQL WHERE CLAUSE
 ```
 SELECT * FROM CUSTOMERS WHERE CUSTOMERID IS 1;
-```
-```
 SELECT * FROM CUSTOMERS WHERE CITY IS "London";
 ```
 * #### SQL AND, OR, NOT CLAUSE
 ```
 SELECT * FROM CUSTOMERS WHERE CITY IS "London" AND CUSTOMERID IS 4;
-```
-```
 SELECT * FROM CUSTOMERS WHERE CITY IS "London" OR CUSTOMERID IS 3;
-```
-```
 SELECT * FROM CUSTOMERS WHERE NOT CUSTOMERID IS 3;
 ```
+* #### Combining AND, OR, NOT
+```
+SELECT * FROM CUSTOMERS WHERE CustomerID IS 1 AND (CITY IS "London" OR CITY IS "Berlin");
+SELECT * FROM CUSTOMERS WHERE NOT COUNTRY IS "Germany" OR (CustomerName IS "Maria Anders" AND CITY IS "Berlin");
 
+```
+* #### SQL ORDER BY CLAUSE
 
+Used to order the result either in ascending or descending order
+```
+SELECT * FROM Customers ORDER BY CONTACTNAME DESC;
+SELECT * FROM Customers ORDER BY CUSTOMERID ASC;
+```
+* #### INSERT INTO 
+
+Used to insert values into columns/fields of the table
+```
+INSERT INTO CUSTOMERS (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('100', 'Sai Adarsh', 'Adarsh', 'Velachery', 'Chennai', '600088', 'India');
+INSERT INTO CUSTOMERS (CustomerID, CustomerName, ContactName) VALUES ('100', 'Sai Adarsh', 'Adarsh');
+
+```
 
 
 
