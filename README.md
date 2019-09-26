@@ -76,6 +76,30 @@ Used to display null or empty
 SELECT * FROM CUSTOMERS WHERE CUSTOMERID IS NULL;
 SELECT CUSTOMERNAME FROM CUSTOMERS WHERE CITY IS NOT NULL;
 ```
+* #### UPDATE CLAUSE
+Used to update the DataBase or table
+```
+UPDATE table_name SET column1, column2 WHERE CustomerID is 10;
+```
 
+* #### DELETE CLAUSE
+Used to delete the Database or table
+```
+DELETE FROM CUSTOMERS WHERE CUSTOMERID IS "1009";
+DELETE FROM CUSTOMERS
+```
 
+* #### LIMIT CLAUSE
+Used to display top N records from the database or table
+```
+SELECT * FROM CUSTOMERS LIMIT 5;
+SELECT CUSTOMERID FROM CUSTOMERS WHERE CITY IS "London" LIMIT 5;
+```
+
+* ### SQL Functions
+COUNT(): ```SELECT COUNT(*) FROM CUSTOMERS;``` \
+SUM(): ```SELECT COUNT(*) FROM CUSTOMERS;```  \
+AVG(): ```SELECT AVG(*) FROM CUSTOMERS;```  \
+MIN(): ```SELECT MIN(CustomerID) FROM CUSTOMERS;```  \
+MAX(): ```SELECT MAX(CustomerID) FROM CUSTOMERS;```
 
