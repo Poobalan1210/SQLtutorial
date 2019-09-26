@@ -1,4 +1,6 @@
 # SQL Tutorial (or) SQL Cheatsheet
+![img](images/sql.jpg)
+
 The only SQL tutorial/cheatsheet you'll ever need. 
 
 ## SQL (Structured Query Language)
