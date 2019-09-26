@@ -1,5 +1,7 @@
 # SQL Tutorial (or) SQL Cheatsheet
-## The only SQL tutorial/cheatsheet you'll ever need. 
+* The only SQL tutorial/cheatsheet you'll ever need. 
+
+
 ![img](images/sql.jpg)
 
 ## SQL (Structured Query Language)
@@ -21,13 +23,44 @@
 ## SQL Commands
 
 * SQL Select
+
+Semicolon is required to seperate different SQL commands. SQL is case in-sensitive.
 ```
 SELECT * FROM Customers;
 ```
-* Semicolon is required to seperate different SQL commands. SQL is case in-sensitive.
 ```
 SELECT column1, column2 FROM table_name;
 ```
+* SQL SELECT DISTINCT
+
+Displays only the unique results, without duplicates.
+```
+SELECT DISTINCT * FROM CUSTOMERS;
+```
+```
+SELECT DISTINCT CustomerName, ContactName FROM CUSTOMERS;
+```
+```
+SELECT COUNT (DISTINCT CustomerName) FROM CUSTOMERS;
+```
+* SQL WHERE CLAUSE
+```
+SELECT * FROM CUSTOMERS WHERE CUSTOMERID IS 1;
+```
+```
+SELECT * FROM CUSTOMERS WHERE CITY IS "London";
+```
+* SQL AND, OR, NOT CLAUSE
+```
+SELECT * FROM CUSTOMERS WHERE CITY IS "London" AND CUSTOMERID IS 4;
+```
+```
+SELECT * FROM CUSTOMERS WHERE CITY IS "London" OR CUSTOMERID IS 3;
+```
+```
+SELECT * FROM CUSTOMERS WHERE NOT CUSTOMERID IS 3;
+```
+
 
 
 
