@@ -1,5 +1,5 @@
 # SQL Tutorial (or) SQL Cheatsheet
-![img](images/sql.jpg)
+![img](images/sql.jpg =50x100)
 
 The only SQL tutorial/cheatsheet you'll ever need. 
 
