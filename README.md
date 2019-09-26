@@ -22,7 +22,7 @@
 
 ## SQL Commands
 
-* SQL Select
+* #### SQL Select
 
 Semicolon is required to seperate different SQL commands. SQL is case in-sensitive.
 ```
@@ -31,7 +31,7 @@ SELECT * FROM Customers;
 ```
 SELECT column1, column2 FROM table_name;
 ```
-* SQL SELECT DISTINCT
+* #### SQL SELECT DISTINCT
 
 Displays only the unique results, without duplicates.
 ```
@@ -43,14 +43,14 @@ SELECT DISTINCT CustomerName, ContactName FROM CUSTOMERS;
 ```
 SELECT COUNT (DISTINCT CustomerName) FROM CUSTOMERS;
 ```
-* SQL WHERE CLAUSE
+* #### SQL WHERE CLAUSE
 ```
 SELECT * FROM CUSTOMERS WHERE CUSTOMERID IS 1;
 ```
 ```
 SELECT * FROM CUSTOMERS WHERE CITY IS "London";
 ```
-* SQL AND, OR, NOT CLAUSE
+* #### SQL AND, OR, NOT CLAUSE
 ```
 SELECT * FROM CUSTOMERS WHERE CITY IS "London" AND CUSTOMERID IS 4;
 ```
