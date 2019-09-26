@@ -69,6 +69,13 @@ INSERT INTO CUSTOMERS (CustomerID, CustomerName, ContactName, Address, City, Pos
 INSERT INTO CUSTOMERS (CustomerID, CustomerName, ContactName) VALUES ('100', 'Sai Adarsh', 'Adarsh');
 
 ```
+* #### NULL CLAUSE
+
+Used to display null or empty
+```
+SELECT * FROM CUSTOMERS WHERE CUSTOMERID IS NULL;
+SELECT CUSTOMERNAME FROM CUSTOMERS WHERE CITY IS NOT NULL;
+```
 
 
 
