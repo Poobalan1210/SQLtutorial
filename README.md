@@ -97,10 +97,27 @@ SELECT * FROM CUSTOMERS LIMIT 5;
 SELECT CUSTOMERID FROM CUSTOMERS WHERE CITY IS "London" LIMIT 5;
 ```
 
-* ### SQL Functions
+* #### SQL Functions
 COUNT(): ```SELECT COUNT(*) FROM CUSTOMERS;``` \
 SUM(): ```SELECT COUNT(*) FROM CUSTOMERS;```  \
 AVG(): ```SELECT AVG(*) FROM CUSTOMERS;```  \
 MIN(): ```SELECT MIN(CustomerID) FROM CUSTOMERS;```  \
 MAX(): ```SELECT MAX(CustomerID) FROM CUSTOMERS;```
 
+* #### LIKE CLAUSE
+Used to filter based on initial, end and in-between occurences of strings
+```
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "a%";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "%a";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "%a%";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "a%b";
+SELECT * FROM CUSTOMERS WHERE CustomerName NOT LIKE "a%";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "_a";
+```
+
+* #### WILDCARDS CLAUSE
+Used for string and substring based conditional-filtering
+```
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[acs]%";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[a-f]%";
+SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[!acf]%";
