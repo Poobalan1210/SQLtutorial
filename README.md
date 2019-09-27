@@ -121,3 +121,12 @@ Used for string and substring based conditional-filtering
 SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[acs]%";
 SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[a-f]%";
 SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[!acf]%";
+```
+
+* #### IN CLAUSE
+Checks if present in
+```
+SELECT * FROM CUSTOMERS WHERE COUNTRY IN ('Germany', 'Norway');
+SELECT * FROM CUSTOMERS WHERE COUNTRY NOT IN ('Germany', 'Norway');
+SELECT * FROM CUSTOMERS WHERE COUNTRY IN (SELECT COUNTRY FROM SUPPLIERS);
+```
