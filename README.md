@@ -104,7 +104,7 @@ AVG(): ```SELECT AVG(*) FROM CUSTOMERS;```  \
 MIN(): ```SELECT MIN(CustomerID) FROM CUSTOMERS;```  \
 MAX(): ```SELECT MAX(CustomerID) FROM CUSTOMERS;```
 
-* #### LIKE CLAUSE
+* #### LIKE, NOT LIKE CLAUSE
 Used to filter based on initial, end and in-between occurences of strings
 ```
 SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "a%";
@@ -123,7 +123,7 @@ SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[a-f]%";
 SELECT * FROM CUSTOMERS WHERE CustomerName LIKE "[!acf]%";
 ```
 
-* #### IN CLAUSE
+* #### IN, NOT IN CLAUSE
 Checks if present in
 ```
 SELECT * FROM CUSTOMERS WHERE COUNTRY IN ('Germany', 'Norway');
