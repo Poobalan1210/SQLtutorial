@@ -130,3 +130,14 @@ SELECT * FROM CUSTOMERS WHERE COUNTRY IN ('Germany', 'Norway');
 SELECT * FROM CUSTOMERS WHERE COUNTRY NOT IN ('Germany', 'Norway');
 SELECT * FROM CUSTOMERS WHERE COUNTRY IN (SELECT COUNTRY FROM SUPPLIERS);
 ```
+
+* #### COMMENTS IN SQL
+Single line comments
+```
+-- SELECT * FROM CUSTOMERS;
+SELECT COLUMN1 FROM CUSTOMERS
+```
+Multi-line comments
+```
+/* Something in line 1
+Something in line 2 */
